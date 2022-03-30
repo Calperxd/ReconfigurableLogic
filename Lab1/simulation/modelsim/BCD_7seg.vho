@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
--- DATE "03/25/2022 22:23:51"
+-- DATE "03/30/2022 09:40:09"
 
 -- 
 -- Device: Altera EP2C35F672C6 Package FBGA672
@@ -41,15 +41,15 @@ END bcd_to_seven;
 -- Design Ports Information
 -- bcd_out[0]	=>  Location: PIN_L3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 -- bcd_out[1]	=>  Location: PIN_L2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- bcd_out[2]	=>  Location: PIN_L6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- bcd_out[3]	=>  Location: PIN_L7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- bcd_out[4]	=>  Location: PIN_P9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- bcd_out[5]	=>  Location: PIN_N9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- bcd_out[6]	=>  Location: PIN_L4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
--- bcd_in[0]	=>  Location: PIN_L9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- bcd_in[1]	=>  Location: PIN_K1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- bcd_in[2]	=>  Location: PIN_K2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
--- bcd_in[3]	=>  Location: PIN_J1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- bcd_out[2]	=>  Location: PIN_L9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- bcd_out[3]	=>  Location: PIN_L6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- bcd_out[4]	=>  Location: PIN_L7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- bcd_out[5]	=>  Location: PIN_P9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- bcd_out[6]	=>  Location: PIN_N9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- bcd_in[0]	=>  Location: PIN_U3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- bcd_in[1]	=>  Location: PIN_U4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- bcd_in[2]	=>  Location: PIN_V1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- bcd_in[3]	=>  Location: PIN_V2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF bcd_to_seven IS
@@ -83,7 +83,7 @@ ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 \ALT_INV_Mux6~0_combout\ <= NOT \Mux6~0_combout\;
 
--- Location: PIN_K1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_U4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \bcd_in[1]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -109,33 +109,7 @@ PORT MAP (
 	padio => ww_bcd_in(1),
 	combout => \bcd_in~combout\(1));
 
--- Location: PIN_L9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\bcd_in[0]~I\ : cycloneii_io
--- pragma translate_off
-GENERIC MAP (
-	input_async_reset => "none",
-	input_power_up => "low",
-	input_register_mode => "none",
-	input_sync_reset => "none",
-	oe_async_reset => "none",
-	oe_power_up => "low",
-	oe_register_mode => "none",
-	oe_sync_reset => "none",
-	operation_mode => "input",
-	output_async_reset => "none",
-	output_power_up => "low",
-	output_register_mode => "none",
-	output_sync_reset => "none")
--- pragma translate_on
-PORT MAP (
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	devoe => ww_devoe,
-	oe => GND,
-	padio => ww_bcd_in(0),
-	combout => \bcd_in~combout\(0));
-
--- Location: PIN_K2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_V1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \bcd_in[2]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -161,7 +135,33 @@ PORT MAP (
 	padio => ww_bcd_in(2),
 	combout => \bcd_in~combout\(2));
 
--- Location: PIN_J1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_U3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\bcd_in[0]~I\ : cycloneii_io
+-- pragma translate_off
+GENERIC MAP (
+	input_async_reset => "none",
+	input_power_up => "low",
+	input_register_mode => "none",
+	input_sync_reset => "none",
+	oe_async_reset => "none",
+	oe_power_up => "low",
+	oe_register_mode => "none",
+	oe_sync_reset => "none",
+	operation_mode => "input",
+	output_async_reset => "none",
+	output_power_up => "low",
+	output_register_mode => "none",
+	output_sync_reset => "none")
+-- pragma translate_on
+PORT MAP (
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	devoe => ww_devoe,
+	oe => GND,
+	padio => ww_bcd_in(0),
+	combout => \bcd_in~combout\(0));
+
+-- Location: PIN_V2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \bcd_in[3]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -187,61 +187,61 @@ PORT MAP (
 	padio => ww_bcd_in(3),
 	combout => \bcd_in~combout\(3));
 
--- Location: LCCOMB_X1_Y25_N16
+-- Location: LCCOMB_X1_Y24_N16
 \Mux6~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Mux6~0_combout\ = (\bcd_in~combout\(3)) # ((\bcd_in~combout\(1) & ((!\bcd_in~combout\(2)) # (!\bcd_in~combout\(0)))) # (!\bcd_in~combout\(1) & ((\bcd_in~combout\(2)))))
+-- \Mux6~0_combout\ = (\bcd_in~combout\(3)) # ((\bcd_in~combout\(1) & ((!\bcd_in~combout\(0)) # (!\bcd_in~combout\(2)))) # (!\bcd_in~combout\(1) & (\bcd_in~combout\(2))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111101111010",
+	lut_mask => "1111111101101110",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \bcd_in~combout\(1),
-	datab => \bcd_in~combout\(0),
-	datac => \bcd_in~combout\(2),
+	datab => \bcd_in~combout\(2),
+	datac => \bcd_in~combout\(0),
 	datad => \bcd_in~combout\(3),
 	combout => \Mux6~0_combout\);
 
--- Location: LCCOMB_X1_Y25_N26
+-- Location: LCCOMB_X1_Y24_N18
 \Mux5~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Mux5~0_combout\ = (!\bcd_in~combout\(3) & ((\bcd_in~combout\(1) & ((\bcd_in~combout\(0)) # (!\bcd_in~combout\(2)))) # (!\bcd_in~combout\(1) & (\bcd_in~combout\(0) & !\bcd_in~combout\(2)))))
+-- \Mux5~0_combout\ = (!\bcd_in~combout\(3) & ((\bcd_in~combout\(1) & ((\bcd_in~combout\(0)) # (!\bcd_in~combout\(2)))) # (!\bcd_in~combout\(1) & (!\bcd_in~combout\(2) & \bcd_in~combout\(0)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000000010001110",
+	lut_mask => "0000000010110010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \bcd_in~combout\(1),
-	datab => \bcd_in~combout\(0),
-	datac => \bcd_in~combout\(2),
+	datab => \bcd_in~combout\(2),
+	datac => \bcd_in~combout\(0),
 	datad => \bcd_in~combout\(3),
 	combout => \Mux5~0_combout\);
 
--- Location: LCCOMB_X1_Y25_N28
+-- Location: LCCOMB_X1_Y24_N20
 \Mux4~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Mux4~0_combout\ = (\bcd_in~combout\(1) & (\bcd_in~combout\(0) & ((!\bcd_in~combout\(3))))) # (!\bcd_in~combout\(1) & ((\bcd_in~combout\(2) & ((!\bcd_in~combout\(3)))) # (!\bcd_in~combout\(2) & (\bcd_in~combout\(0)))))
+-- \Mux4~0_combout\ = (\bcd_in~combout\(1) & (((\bcd_in~combout\(0) & !\bcd_in~combout\(3))))) # (!\bcd_in~combout\(1) & ((\bcd_in~combout\(2) & ((!\bcd_in~combout\(3)))) # (!\bcd_in~combout\(2) & (\bcd_in~combout\(0)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000010011011100",
+	lut_mask => "0001000011110100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \bcd_in~combout\(1),
-	datab => \bcd_in~combout\(0),
-	datac => \bcd_in~combout\(2),
+	datab => \bcd_in~combout\(2),
+	datac => \bcd_in~combout\(0),
 	datad => \bcd_in~combout\(3),
 	combout => \Mux4~0_combout\);
 
--- Location: LCCOMB_X1_Y25_N22
+-- Location: LCCOMB_X1_Y24_N14
 \Mux3~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Mux3~0_combout\ = (!\bcd_in~combout\(3) & ((\bcd_in~combout\(1) & (\bcd_in~combout\(0) & \bcd_in~combout\(2))) # (!\bcd_in~combout\(1) & (\bcd_in~combout\(0) $ (\bcd_in~combout\(2))))))
+-- \Mux3~0_combout\ = (!\bcd_in~combout\(3) & ((\bcd_in~combout\(1) & (\bcd_in~combout\(2) & \bcd_in~combout\(0))) # (!\bcd_in~combout\(1) & (\bcd_in~combout\(2) $ (\bcd_in~combout\(0))))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -250,15 +250,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \bcd_in~combout\(1),
-	datab => \bcd_in~combout\(0),
-	datac => \bcd_in~combout\(2),
+	datab => \bcd_in~combout\(2),
+	datac => \bcd_in~combout\(0),
 	datad => \bcd_in~combout\(3),
 	combout => \Mux3~0_combout\);
 
--- Location: LCCOMB_X1_Y25_N0
+-- Location: LCCOMB_X1_Y24_N0
 \Mux2~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Mux2~0_combout\ = (\bcd_in~combout\(1) & (!\bcd_in~combout\(0) & (!\bcd_in~combout\(2) & !\bcd_in~combout\(3))))
+-- \Mux2~0_combout\ = (\bcd_in~combout\(1) & (!\bcd_in~combout\(2) & (!\bcd_in~combout\(0) & !\bcd_in~combout\(3))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -267,32 +267,32 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \bcd_in~combout\(1),
-	datab => \bcd_in~combout\(0),
-	datac => \bcd_in~combout\(2),
+	datab => \bcd_in~combout\(2),
+	datac => \bcd_in~combout\(0),
 	datad => \bcd_in~combout\(3),
 	combout => \Mux2~0_combout\);
 
--- Location: LCCOMB_X1_Y25_N2
+-- Location: LCCOMB_X1_Y24_N10
 \Mux1~0\ : cycloneii_lcell_comb
 -- Equation(s):
 -- \Mux1~0_combout\ = (\bcd_in~combout\(2) & ((\bcd_in~combout\(3)) # (\bcd_in~combout\(1) $ (\bcd_in~combout\(0))))) # (!\bcd_in~combout\(2) & (\bcd_in~combout\(1) & ((\bcd_in~combout\(3)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111101001100000",
+	lut_mask => "1110111001001000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \bcd_in~combout\(1),
-	datab => \bcd_in~combout\(0),
-	datac => \bcd_in~combout\(2),
+	datab => \bcd_in~combout\(2),
+	datac => \bcd_in~combout\(0),
 	datad => \bcd_in~combout\(3),
 	combout => \Mux1~0_combout\);
 
--- Location: LCCOMB_X1_Y25_N20
+-- Location: LCCOMB_X1_Y24_N12
 \Mux0~0\ : cycloneii_lcell_comb
 -- Equation(s):
--- \Mux0~0_combout\ = (!\bcd_in~combout\(1) & (!\bcd_in~combout\(3) & (\bcd_in~combout\(0) $ (\bcd_in~combout\(2)))))
+-- \Mux0~0_combout\ = (!\bcd_in~combout\(1) & (!\bcd_in~combout\(3) & (\bcd_in~combout\(2) $ (\bcd_in~combout\(0)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -301,8 +301,8 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \bcd_in~combout\(1),
-	datab => \bcd_in~combout\(0),
-	datac => \bcd_in~combout\(2),
+	datab => \bcd_in~combout\(2),
+	datac => \bcd_in~combout\(0),
 	datad => \bcd_in~combout\(3),
 	combout => \Mux0~0_combout\);
 
@@ -358,7 +358,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_bcd_out(1));
 
--- Location: PIN_L6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_L9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \bcd_out[2]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -384,7 +384,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_bcd_out(2));
 
--- Location: PIN_L7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_L6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \bcd_out[3]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -410,7 +410,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_bcd_out(3));
 
--- Location: PIN_P9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_L7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \bcd_out[4]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -436,7 +436,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_bcd_out(4));
 
--- Location: PIN_N9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_P9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \bcd_out[5]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (
@@ -462,7 +462,7 @@ PORT MAP (
 	oe => VCC,
 	padio => ww_bcd_out(5));
 
--- Location: PIN_L4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+-- Location: PIN_N9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 \bcd_out[6]~I\ : cycloneii_io
 -- pragma translate_off
 GENERIC MAP (

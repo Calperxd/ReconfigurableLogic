@@ -428,7 +428,7 @@ GND*                         : H23       :        :                   :         
 GND*                         : H24       :        :                   :         : 5         :                
 GND*                         : H25       :        :                   :         : 5         :                
 GND*                         : H26       :        :                   :         : 5         :                
-bcd_in[3]                    : J1        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : J1        :        :                   :         : 2         :                
 GND*                         : J2        :        :                   :         : 2         :                
 GND*                         : J3        :        :                   :         : 2         :                
 GND*                         : J4        :        :                   :         : 2         :                
@@ -454,8 +454,8 @@ GND*                         : J23       :        :                   :         
 GND*                         : J24       :        :                   :         : 5         :                
 GND*                         : J25       :        :                   :         : 5         :                
 GND*                         : J26       :        :                   :         : 5         :                
-bcd_in[1]                    : K1        : input  : 3.3-V LVTTL       :         : 2         : N              
-bcd_in[2]                    : K2        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : K1        :        :                   :         : 2         :                
+GND*                         : K2        :        :                   :         : 2         :                
 GND*                         : K3        :        :                   :         : 2         :                
 GND*                         : K4        :        :                   :         : 2         :                
 GND*                         : K5        :        :                   :         : 2         :                
@@ -483,12 +483,12 @@ GND*                         : K26       :        :                   :         
 VCCIO2                       : L1        : power  :                   : 3.3V    : 2         :                
 bcd_out[1]                   : L2        : output : 3.3-V LVTTL       :         : 2         : Y              
 bcd_out[0]                   : L3        : output : 3.3-V LVTTL       :         : 2         : Y              
-bcd_out[6]                   : L4        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : L4        :        :                   :         : 2         :                
 GND                          : L5        : gnd    :                   :         :           :                
-bcd_out[2]                   : L6        : output : 3.3-V LVTTL       :         : 2         : Y              
-bcd_out[3]                   : L7        : output : 3.3-V LVTTL       :         : 2         : Y              
+bcd_out[3]                   : L6        : output : 3.3-V LVTTL       :         : 2         : Y              
+bcd_out[4]                   : L7        : output : 3.3-V LVTTL       :         : 2         : Y              
 TMS                          : L8        : input  :                   :         : 2         :                
-bcd_in[0]                    : L9        : input  : 3.3-V LVTTL       :         : 2         : N              
+bcd_out[2]                   : L9        : output : 3.3-V LVTTL       :         : 2         : Y              
 GND*                         : L10       :        :                   :         : 2         :                
 VCCINT                       : L11       : power  :                   : 1.2V    :           :                
 GND                          : L12       : gnd    :                   :         :           :                
@@ -540,7 +540,7 @@ VCCIO2                       : N5        : power  :                   : 3.3V    
 DCLK                         : N6        :        :                   :         : 2         :                
 nCONFIG                      : N7        :        :                   :         : 2         :                
 GND                          : N8        : gnd    :                   :         :           :                
-bcd_out[5]                   : N9        : output : 3.3-V LVTTL       :         : 2         : Y              
+bcd_out[6]                   : N9        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
 GND                          : N12       : gnd    :                   :         :           :                
@@ -566,7 +566,7 @@ VCCIO1                       : P5        : power  :                   : 3.3V    
 GND*                         : P6        :        :                   :         : 1         :                
 GND*                         : P7        :        :                   :         : 1         :                
 GND                          : P8        : gnd    :                   :         :           :                
-bcd_out[4]                   : P9        : output : 3.3-V LVTTL       :         : 2         : Y              
+bcd_out[5]                   : P9        : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCINT                       : P10       : power  :                   : 1.2V    :           :                
 GND                          : P11       : gnd    :                   :         :           :                
 GND                          : P12       : gnd    :                   :         :           :                
@@ -638,8 +638,8 @@ GND*                         : T25       :        :                   :         
 VCCIO6                       : T26       : power  :                   : 3.3V    : 6         :                
 GND*                         : U1        :        :                   :         : 1         :                
 GND*                         : U2        :        :                   :         : 1         :                
-GND*                         : U3        :        :                   :         : 1         :                
-GND*                         : U4        :        :                   :         : 1         :                
+bcd_in[0]                    : U3        : input  : 3.3-V LVTTL       :         : 1         : Y              
+bcd_in[1]                    : U4        : input  : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : U5        :        :                   :         : 1         :                
 GND*                         : U6        :        :                   :         : 1         :                
 GND*                         : U7        :        :                   :         : 1         :                
@@ -662,8 +662,8 @@ GND*                         : U23       :        :                   :         
 GND*                         : U24       :        :                   :         : 6         :                
 GND*                         : U25       :        :                   :         : 6         :                
 GND*                         : U26       :        :                   :         : 6         :                
-GND*                         : V1        :        :                   :         : 1         :                
-GND*                         : V2        :        :                   :         : 1         :                
+bcd_in[2]                    : V1        : input  : 3.3-V LVTTL       :         : 1         : Y              
+bcd_in[3]                    : V2        : input  : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : V3        :        :                   :         : 1         :                
 GND*                         : V4        :        :                   :         : 1         :                
 GND*                         : V5        :        :                   :         : 1         :                
