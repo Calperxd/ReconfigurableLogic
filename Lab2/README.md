@@ -51,9 +51,9 @@ The code snippet related to the behavior of decode is the bellow vhdl code
     bcd_4_out2 <= to_unsigned(count2, bcd_4_out2'length);
 ```
 
-The pin planning is based on board **TERASIC CYCLONE II EP2C35 Development**
+The pin planning is based on board **TERASIC CYCLONE II EP2C35 Development** and for this IC looks like the image below
 
-![pinplanner](https://user-images.githubusercontent.com/48101913/160220626-221e5bcd-1094-4c2c-88f9-8c3268f1b07c.PNG)
+![pinplanner](https://user-images.githubusercontent.com/48101913/164029227-0dea4445-76ad-447f-be01-7052c611c122.PNG)
 
 You can view the simulation on ModelSim just Download the testbench in this repository or you can download the .do file right here.
 
