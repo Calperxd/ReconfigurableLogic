@@ -23,7 +23,7 @@
 
 First of all we must imagine how our IC look like, the image below shows the IC.
 
-![image](https://user-images.githubusercontent.com/48101913/160220468-9a3493cd-3783-4d72-91a6-d64672782f7f.png)
+![counter](https://user-images.githubusercontent.com/48101913/164028414-9cc0080b-26c7-457e-979f-5f9ad4dcbfa5.jpg)
 
 The code snippet related to the behavior of decode is the bellow vhdl code
 
