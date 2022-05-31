@@ -11,7 +11,7 @@
 
 
 # Introduction
-<p>This lab aims to develop a NiosII processor inside the FPGA <p>
+<p>This lab aims to develop a NiosII processor inside the FPGA. <p>
 
 # Development Environment
 - Windows 10
