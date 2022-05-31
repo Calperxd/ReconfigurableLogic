@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ga\OneDrive\UTFPR\10 semestre\Logica reconfiguravel\ReconfigurableLogic\Lab3\simulation\modelsim
+vUC
+!i10b 1
+!s100 MPUMTa2n5Hj=Y[JJgo`Fe3
+ITKGzIKMK@m1NSkQU6i2NS2
+ViPN3l5j>kG[K5D^f9f@_A2
+Z1 dC:\Users\ga\OneDrive\UTFPR\10 semestre\Logica reconfiguravel\ReconfigurableLogic\Lab3\simulation\modelsim
+w1650766350
+8Cron.vo
+FCron.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1650767061.401000
+!s107 Cron.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Cron.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+n@u@c

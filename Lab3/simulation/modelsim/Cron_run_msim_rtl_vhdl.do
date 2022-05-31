@@ -1,0 +1,12 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/bcd_to_seven.vhd}
+vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/counter.vhd}
+vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/UC.vhd}
+vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/clock_divider.vhd}
+

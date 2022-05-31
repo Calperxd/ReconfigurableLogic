@@ -1,0 +1,37 @@
+-- Gabriel Calper
+-- Electronic Engineering
+-- RA : 1886762
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Cron is
+    port
+    (
+        reset               :       in          std_logic;
+        clock               :       in          std_logic;
+        O1                  :       out         std_logic
+    );
+end Cron;
+
+architecture Behavior of Cron is
+    component debounce is 
+        port
+        (
+            clk     : in  std_logic;
+            button  : in  std_logic;
+            result  : out std_logic
+        );
+    end component;
+    signal wire_1_O1    : std_logic;
+	 signal wire_2_reset	: std_logic;
+begin
+    debounce_reset: debounce port map
+        (
+            clk         => clock,
+            button      => wire_2_reset,
+            result      => wire_1_O1
+        );
+    O1 <= wire_1_O1 and '1';
+end Behavior ;

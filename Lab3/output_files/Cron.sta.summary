@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock_divider:out_to_counter|tmp1'
+Slack : -3.359
+TNS   : -159.291
+
+Type  : Slow Model Setup 'clock_divider:out_to_counter|tmp2'
+Slack : -3.203
+TNS   : -165.864
+
+Type  : Slow Model Setup 'clock'
+Slack : -3.143
+TNS   : -137.711
+
+Type  : Slow Model Hold 'clock'
+Slack : -2.535
+TNS   : -5.059
+
+Type  : Slow Model Hold 'clock_divider:out_to_counter|tmp1'
+Slack : 0.531
+TNS   : 0.000
+
+Type  : Slow Model Hold 'clock_divider:out_to_counter|tmp2'
+Slack : 0.531
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -65.380
+
+Type  : Slow Model Minimum Pulse Width 'clock_divider:out_to_counter|tmp1'
+Slack : -0.500
+TNS   : -64.000
+
+Type  : Slow Model Minimum Pulse Width 'clock_divider:out_to_counter|tmp2'
+Slack : -0.500
+TNS   : -64.000
+
+Type  : Fast Model Setup 'clock_divider:out_to_counter|tmp1'
+Slack : -1.005
+TNS   : -41.276
+
+Type  : Fast Model Setup 'clock'
+Slack : -0.993
+TNS   : -32.503
+
+Type  : Fast Model Setup 'clock_divider:out_to_counter|tmp2'
+Slack : -0.978
+TNS   : -43.933
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.577
+TNS   : -3.147
+
+Type  : Fast Model Hold 'clock_divider:out_to_counter|tmp1'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clock_divider:out_to_counter|tmp2'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -65.380
+
+Type  : Fast Model Minimum Pulse Width 'clock_divider:out_to_counter|tmp1'
+Slack : -0.500
+TNS   : -64.000
+
+Type  : Fast Model Minimum Pulse Width 'clock_divider:out_to_counter|tmp2'
+Slack : -0.500
+TNS   : -64.000
+
+------------------------------------------------------------

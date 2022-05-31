@@ -1,0 +1,153 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ga\OneDrive\UTFPR\10 semestre\Logica reconfiguravel\ReconfigurableLogic\Lab3\simulation\modelsim
+Ebcd_to_seven
+Z1 w1650770382
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\ga\OneDrive\UTFPR\10 semestre\Logica reconfiguravel\ReconfigurableLogic\Lab3\simulation\modelsim
+Z6 8C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/bcd_to_seven.vhd
+Z7 FC:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/bcd_to_seven.vhd
+l0
+L11
+VY[?eUFocViSG7jbGdEIHG3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1650770468.758000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/bcd_to_seven.vhd|
+Z11 !s107 C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/bcd_to_seven.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 S5Hk5`9ZOhF9;>lO_<o9U1
+!i10b 1
+Abehavior
+R2
+R3
+R4
+DEx4 work 12 bcd_to_seven 0 22 Y[?eUFocViSG7jbGdEIHG3
+l20
+L19
+Vei^M?flThh76GAJNPbL<P0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 WD89jz5N6U0]GA;WU2@Ne3
+!i10b 1
+Eclock_divider
+Z14 w1650765249
+R2
+R3
+R4
+R5
+Z15 8C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/clock_divider.vhd
+Z16 FC:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/clock_divider.vhd
+l0
+L6
+VLINhKRXH?09EdoE1N6ZLK2
+!s100 _VW6GToj1S6mX<2D7T=Wl0
+R8
+31
+!i10b 1
+Z17 !s108 1650770469.049000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/clock_divider.vhd|
+Z19 !s107 C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/clock_divider.vhd|
+R12
+R13
+Abehavior
+R2
+R3
+R4
+DEx4 work 13 clock_divider 0 22 LINhKRXH?09EdoE1N6ZLK2
+l24
+L17
+V;if3A7384Dn[BZ7Q]]1L_1
+!s100 6G5odobgn[;W?G2iCbOhO3
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13
+Ecounter
+Z20 w1650768567
+R2
+R3
+R4
+R5
+Z21 8C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/counter.vhd
+Z22 FC:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/counter.vhd
+l0
+L9
+VhZ2nhRWAi<DTGJ3?P[:^f0
+R8
+31
+Z23 !s108 1650770468.847000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/counter.vhd|
+Z25 !s107 C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/counter.vhd|
+R12
+R13
+!s100 TnR0]jhQfYYYg6XR?:_YO1
+!i10b 1
+Abehavior
+R2
+R3
+R4
+DEx4 work 7 counter 0 22 hZ2nhRWAi<DTGJ3?P[:^f0
+l23
+L20
+VIB1aLDebKoWhzNkzh^59L2
+R8
+31
+R23
+R24
+R25
+R12
+R13
+!s100 cQzCe1TBCg3IM_`aAO`IP2
+!i10b 1
+Euc
+Z26 w1650770272
+R2
+R3
+R4
+R5
+Z27 8C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/UC.vhd
+Z28 FC:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/UC.vhd
+l0
+L10
+VJ<h8znfGiI7kSgl[^8WUz1
+R8
+31
+Z29 !s108 1650770468.935000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/UC.vhd|
+Z31 !s107 C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/UC.vhd|
+R12
+R13
+!s100 PfZnV0;IKVhJ5Tc0Pgj?71
+!i10b 1
+Abehavior
+R2
+R3
+R4
+DEx4 work 2 uc 0 22 J<h8znfGiI7kSgl[^8WUz1
+l55
+L21
+V`BdDlCjdk8hVVbc:0hIL72
+R8
+31
+R29
+R30
+R31
+R12
+R13
+!s100 H_==OVRlol2_UI:A[9_aJ3
+!i10b 1

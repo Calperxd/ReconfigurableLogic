@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ga\OneDrive\UTFPR\10 semestre\Logica reconfiguravel\ReconfigurableLogic\LAB5v2\simulation\modelsim
+Ebram
+Z1 w1651284597
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\ga\OneDrive\UTFPR\10 semestre\Logica reconfiguravel\ReconfigurableLogic\LAB5v2\simulation\modelsim
+Z5 8C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/LAB5v2/BRAM.vhd
+Z6 FC:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/LAB5v2/BRAM.vhd
+l0
+L42
+VP[H7BoE[O6>0Q9o9c_D]Z0
+!s100 7`l;dmM;MfS6N@8nTKfL43
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1651284786.963000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/LAB5v2/BRAM.vhd|
+Z10 !s107 C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/LAB5v2/BRAM.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Asyn
+R2
+R3
+DEx4 work 4 bram 0 22 P[H7BoE[O6>0Q9o9c_D]Z0
+l96
+L56
+VEDEb[RWBYZ4UTS9a?Od^Y1
+!s100 8?gGOVUi0z<AMIZMj[UmA1
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Ebram_main
+Z13 w1651284335
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/LAB5v2/BRAM_MAIN.vhd
+Z16 FC:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/LAB5v2/BRAM_MAIN.vhd
+l0
+L9
+VYI@E<ScMjaJ[moz:A4C1Z3
+R7
+31
+Z17 !s108 1651284786.860000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/LAB5v2/BRAM_MAIN.vhd|
+Z19 !s107 C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/LAB5v2/BRAM_MAIN.vhd|
+R11
+R12
+!s100 g`Y1>WTn_e0GkPAEK@WFV2
+!i10b 1
+Abehavior
+R14
+R2
+R3
+DEx4 work 9 bram_main 0 22 YI@E<ScMjaJ[moz:A4C1Z3
+l49
+L24
+VBZZUgZU4H`SEgEfb1>O<Q1
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 M;[]26nRd?bIS0>dWnKSb0
+!i10b 1

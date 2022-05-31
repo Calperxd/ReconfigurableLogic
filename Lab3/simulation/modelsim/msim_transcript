@@ -1,0 +1,112 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Cron_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/bcd_to_seven.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity bcd_to_seven
+# -- Compiling architecture Behavior of bcd_to_seven
+# vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture Behavior of counter
+# vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/UC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity UC
+# -- Compiling architecture Behavior of UC
+# vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/clock_divider.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clock_divider
+# -- Compiling architecture Behavior of clock_divider
+# 
+vcom -reportprogress 300 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/UC_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity UC_tb
+# -- Compiling architecture Behavior of UC_tb
+vsim +altera -do Cron_run_msim_rtl_vhdl.do -l msim_transcript -gui work.uc_tb
+# vsim +altera -do Cron_run_msim_rtl_vhdl.do -l msim_transcript -gui work.uc_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.uc_tb(behavior)
+# Loading work.uc(behavior)
+# Loading work.clock_divider(behavior)
+# Loading work.counter(behavior)
+# Loading work.bcd_to_seven(behavior)
+# do Cron_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/bcd_to_seven.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity bcd_to_seven
+# -- Compiling architecture Behavior of bcd_to_seven
+# vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture Behavior of counter
+# vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/UC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity UC
+# -- Compiling architecture Behavior of UC
+# vcom -93 -work work {C:/Users/ga/OneDrive/UTFPR/10 semestre/Logica reconfiguravel/ReconfigurableLogic/Lab3/clock_divider.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clock_divider
+# -- Compiling architecture Behavior of clock_divider
+# 
+add wave -position insertpoint  \
+sim:/uc_tb/reset \
+sim:/uc_tb/clock \
+sim:/uc_tb/UC_in \
+sim:/uc_tb/UC_out_s \
+sim:/uc_tb/UC_out_ms
+run

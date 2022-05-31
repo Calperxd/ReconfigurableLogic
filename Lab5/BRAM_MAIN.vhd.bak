@@ -1,0 +1,52 @@
+-- Gabriel Calper
+-- Electronic Engineering
+-- RA : 1886762
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity BRAM_MAIN is
+	PORT
+	(
+        cs          : in std_logic;
+		address		: in std_logic_vector(9 DOWNTO 0);  
+		clock		: in std_logic:= '1';
+		data		: in std_logic_vector(7 DOWNTO 0);
+		wren		: in std_logic;
+		q		    : out std_logic_vector(7 DOWNTO 0)
+	);
+end BRAM_MAIN;
+
+
+architecture Behavior of BRAM_MAIN is
+
+    component BRAM is 
+        port
+        (
+            address		: in    std_logic_vector(9 downto 0);
+            clock		: in    std_logic;
+            data		: in    std_logic_vector(7 downto 0);
+            wren		: in    std_logic;
+            q		    : out   std_logic_vector(7 downto 0)
+        );
+    end component;
+
+    signal wire_1           : std_logic;
+
+begin
+
+    BRAM_MAIN1 : port map
+        (
+            address		=> address, 
+            clock		=> wire_1,
+            data		=> data,
+            wren		=> wren,
+            q		    => q
+        );
+
+    
+    
+    wire_1 <= cs and clock;
+
+end Behavior;

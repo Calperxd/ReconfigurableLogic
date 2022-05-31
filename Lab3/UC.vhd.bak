@@ -1,0 +1,42 @@
+-- Gabriel Calper
+-- Electronic Engineering
+-- RA : 1886762
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity UC is
+    port
+    (
+        reset           :   in      std_logic;
+        clock           :   in      std_logic;
+        UC_in           :   in      unsigned(3 downto 0);
+        UC_out_s        :   out     unsigned(6 downto 0);
+        UC_out_ms       :   out     unsigned(6 downto 0);
+        UC_out          :   out     std_logic
+    );
+end UC;
+
+architecture Behavior of UC is
+    component clock_divider is
+        port
+        ( 
+            clock_in                : in std_logic;
+            reset                   : in std_logic;
+            clock_out               : out std_logic
+        );
+    end component;
+
+    signal result       :       std_logic;
+begin
+
+clock_divide_1s : clock_divider port map
+    (
+        clock_in                => clock,
+        reset                   => reset,
+        clock_out               => UC_out
+    );
+
+end Behavior;
