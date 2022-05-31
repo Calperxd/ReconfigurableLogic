@@ -11,7 +11,7 @@
 
 
 # Introduction
-<p>This lab aims to develop a NiosII processor inside the FPGA. <p>
+<p>This lab aims to develop a NiosII processor inside the FPGA and interface it with a custom hardware. <p>
 
 # Development Environment
 - Windows 10
@@ -20,9 +20,9 @@
 
 # Lab6
 
-First of all we must imagine how our IC look like, the image below shows the IC.
-
-![counter](https://user-images.githubusercontent.com/48101913/164028414-9cc0080b-26c7-457e-979f-5f9ad4dcbfa5.jpg)
+To build the Nios we will use Qsys tool that is avaliable inside Quartus. Basically I've added only the peripherals is necessary to blink a LED in the DEII board, image bellow show the list of the added Peripherals.
+  
+![image](https://user-images.githubusercontent.com/48101913/171219778-9b240dee-41de-4639-9b46-738a2eab19fc.png)
 
 The code snippet related to the behavior of decode is the bellow vhdl code
 
