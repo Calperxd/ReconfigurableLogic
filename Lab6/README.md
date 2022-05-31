@@ -24,6 +24,11 @@ To build the Nios we will use Qsys tool that is avaliable inside Quartus. Basica
   
 ![image](https://user-images.githubusercontent.com/48101913/171219778-9b240dee-41de-4639-9b46-738a2eab19fc.png)
 
+Note that if you need to see any pin the Entity you must export its and do to it just click two times on "Export" column as you can see I've exported 3 Pins as follow.
+  
+![image](https://user-images.githubusercontent.com/48101913/171221747-1c0d521e-57c6-4502-b2c1-877ebfa9c0f4.png)
+
+  
 The code snippet related to the behavior of decode is the bellow vhdl code
 
 The pin planning is based on board **TERASIC CYCLONE II EP2C35 Development** and for this IC the pin planner looks like the image below
