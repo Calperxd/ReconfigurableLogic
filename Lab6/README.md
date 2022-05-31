@@ -19,7 +19,7 @@
 - TERASIC CYCLONE II EP2C35 Development & Education BOARD
 
 
-# Lab2
+# Lab6
 
 First of all we must imagine how our IC look like, the image below shows the IC.
 
