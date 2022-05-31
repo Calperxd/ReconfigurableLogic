@@ -53,4 +53,6 @@ int main()
 }
 
 ```
-  
+The behavior of program is like that
+	
+https://user-images.githubusercontent.com/48101913/171226129-6f5d6637-a0c7-422d-81ac-c1311742997b.mp4
