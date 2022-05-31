@@ -28,13 +28,29 @@ Note that if you need to see any pin the Entity you must export its and do to it
   
 ![image](https://user-images.githubusercontent.com/48101913/171221747-1c0d521e-57c6-4502-b2c1-877ebfa9c0f4.png)
 
-  
-The code snippet related to the behavior of decode is the bellow vhdl code
-
 The pin planning is based on board **TERASIC CYCLONE II EP2C35 Development** and for this IC the pin planner looks like the image below
 
-![pinplanner](https://user-images.githubusercontent.com/48101913/164029227-0dea4445-76ad-447f-be01-7052c611c122.PNG)
+![image](https://user-images.githubusercontent.com/48101913/171223795-e27dd0f3-b7e6-4951-ba63-0f27e1665b30.png)
 
-You can view the simulation on ModelSim just Download the testbench in this repository or you can download the .do file right here.
+After do these step just download the code inside the fpga then go to Nios Eclipse version the program loaded inside the Nios processor is quite simple is just a program that you Turn on 3 LED depeding on the value of each input.
 
-[wave.zip](https://github.com/Calperxd/calperxd_CSW41/files/8354520/wave.zip)
+  
+```cpp
+  
+#include "sys/alt_stdio.h"
+#include "System.h"
+#include "io.h"
+
+int main()
+{ 
+  unsigned char test;
+  while (1)
+  {
+	  test = IORD(PIN_ENTRADA_BASE, 0);
+	  IOWR(PIN_SAIDA_BASE,0, test);
+  }
+  return 0;
+}
+
+```
+  
